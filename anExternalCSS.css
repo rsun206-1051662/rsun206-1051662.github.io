@@ -1,0 +1,29 @@
+.container {
+    position: relative;
+    text-align: center;
+    color:rgb(255, 0, 0);
+}
+p.dotted {
+    border-style: dotted;
+}
+
+img {
+    margin: 20px;
+    float: center;
+}
+img.round {
+    border-radius: 30px;
+}
+.centered {
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+}
+.containertext {
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    z-index: 5;
+}
