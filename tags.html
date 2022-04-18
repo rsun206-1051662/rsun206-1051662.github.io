@@ -3,14 +3,55 @@
 	<head>
 		<title>Ryan's Website</title>
 	</head>
-		
+	<style>
+	.container {
+		position: relative;
+		text-align: center;
+		color:rgb(255, 0, 0);
+	}
+	p.dotted {
+		border-style: dotted;
+	}
+
+	img {
+		margin: 20px;
+		float: center;
+	}
+	img.round {
+		border-radius: 30px;
+	}
+	.centered {
+		position: absolute;
+		top:50%;
+		left:50%;
+		transform: translate(-50%, -50%);
+	}
+	.containertext {
+		position: absolute;
+		top:50%;
+		left:50%;
+		transform: translate(-50%, -50%);
+		z-index: 5;
+	}
 
 
+
+	</style>
 	<body>
 		<h1>Ryan Sun</h1>
 		<h2>About Me</h2>
 		<p>I was born in Houston, Texas during a hailstorm.</p>
+
+		<div class="container">
+			<img src="me.jpg" alt = "me" class="round" Style="width:10%;">
+			<div class="centered">
+				<div class="containertext">
+					This Is Me!</div>
+			</div>
+		</div>
+
 		<p>At six months I moved to Seattle, Washington where I've resided ever since.</p>
+
 		
 		<h2> My Favorite Sites</h2>
 
@@ -45,15 +86,20 @@
 			<ol>
 				<li>
 					<a href="https://weather.com/photos/news/2020-11-30-international-landscape-photographer-of-the-year-awards-2020">
-						<img src="https://s.w-x.co/util/image/w/photographer-1st-kelvinyuen-2.jpg?crop=16:9&width=980&format=pjpg&auto=webp&quality=60" title="Tromso, Norway" style="width:100px; height:100px; margin:5px">
+						<img src="https://s.w-x.co/util/image/w/photographer-1st-kelvinyuen-2.jpg?crop=16:9&width=980&format=pjpg&auto=webp&quality=60" title="Tromso, Norway" style="width:50px; height:50px; margin:5px">
+					<p>This is a photo taken in Tromso, Norway </p>
 					</a>
 				</li>
 				<li>
 					<a href="https://petapixel.com/2021/03/15/photographer-captures-the-beautiful-patterns-of-everyday-life-in-asia/">
-						<img src="https://petapixel.com/assets/uploads/2021/03/rk-10-640x800.jpg" title="Japan" style="width:100px; height:100px; margin:5px">
+						<img src="https://petapixel.com/assets/uploads/2021/03/rk-10-640x800.jpg" title="Japan" style="width:50px; height:50px; margin:5px">
+						<p>This is a photo taken in Japan </p>
 					</a>
 				</li>
 			</ol>
+
+		<h2>Paragraphs</h2>
+			<p class="dotted">Times New Roman was commissioned in 1931 by the British Newspaper, The Times. It is a serif typeface and due to its simple and solid design, has become one of the most popular fonts. Despite its name, it has no tie to ancient Rome, and is merely named after the roman or Antiqua font family.</p>
 	</body>
 </html>
 
