@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Mcdonald's Job Application</title>
+</head>
+<body>
+
+<h2>Job Application</h2>
+
+<p> Thank you for your interest in Mcdonald's!</p>
+<p>We're so excited to welcome you to the Mcdonald's Family!</p>
+<p> Now offering below minimum wage and hours that make you want to kill yourself!</p>
+
+<form action="http://gclass.alexburner.com/formtest.php" method="post">
+
+	<fieldset>
+		<legend>Account</legend>
+		<div class="field">
+			<label>Email(Email must be a valid address with an @)</label> 
+			<input type="text" name="email">
+		</div>
+		<div class="field">
+			<label>Password:(Must contain only your Social Security Number. We won't use this for identity theft :))</label> 
+			<input type="password" name="password">
+		</div>
+		<div class="field">
+			<label>Repeat password:</label> 
+			<input type="password" name="password_r">
+		</div>
+	</fieldset>
+
+	<fieldset>
+		<legend>Personal Information</legend>
+		<div class="field">
+			Photo ID: <input type="file" name="image" accept="image"/>
+		</div>
+		<div class="field">
+			Credit Card <input type="file" name="image" accept="image"/>
+			<label>Security Pin</Label>
+				<input type ="number" name="pin">
+		</div>
+		<div class="field">
+			<label>Full Name:</label> 
+			<input type="text" name="name">
+		</div>
+		<div class="field">
+			<label>Date of Birth:</label>
+			<input type="date" name="dob" required>
+		</div>
+
+		<div class="field">
+			<label>Ethnicity:</label> 
+			<select name="state">
+				<option value="" selected="true">Choose an Ethnicity (But we'll probably only hire undocumented immigrants to exploit them)</option>
+				<option value="AL">Asian or Pacific Islander</option>
+				<option value="AK">White</option>
+				<option value="AZ">Hispanic or Latino</option>
+				<option value="AR">African</option>
+				<option value="CA">Native Hawaiian or Other Pacific Islander</option>
+				<option value="CO">American Indian or Alaska Native</option>
+			</select>
+		</div>
+	
+	</fieldset>
+
+	<fieldset>
+		<legend>Availability</legend>
+		<div class="field">
+			<label>Are you legally able to be employed in this country? (We will hire only undocumented so we can underpay and threaten with deportation!)</label> 
+			<input type="radio" name="legal" value="yes">Yes
+			<input type="radio" name="legal" value="no">No
+			<input type="radio" name="legal" value="maybe">Maybe
+		</div>
+		<div class="field">
+			<label>What type of position are you seeking? (check all that apply)</label>
+			<ul>
+				<li><input type="checkbox" name="position_pt" value="parttime">Part time</li>
+				<li><input type="checkbox" name="position_ft" value="fulltime">Full time</li>
+				<li><input type="checkbox" name="position_sl" value="seasonal">Seasonal</li>
+				<li><input type="checkbox" name="position_tp" value="temporary">Temporary</li>
+			</ul>
+		</div>
+		<div class="field">
+			<label>Hours available</label>
+			<table>
+				<tr>
+					<td></td>
+					<th>Sun</th>
+					<th>Mon</th>
+					<th>Tue</th>
+					<th>Wed</th>
+					<th>Thu</th>
+					<th>Fri</th>
+					<th>Sat</th>
+				</tr>
+				<tr>
+					<th>From</th>
+					<td><input type="time" size="5" name="su_from"></td>
+					<td><input type="time" size="5" name="mo_from"></td>
+					<td><input type="time" size="5" name="tu_from"></td>
+					<td><input type="time" size="5" name="we_from"></td>
+					<td><input type="time" size="5" name="th_from"></td>
+					<td><input type="time" size="5" name="fr_from"></td>
+					<td><input type="time" size="5" name="sa_from"></td>
+				</tr>
+				<tr>
+					<th>Until</th>
+					<td><input type="time" size="5" name="su_until"></td>
+					<td><input type="time" size="5" name="mo_until"></td>
+					<td><input type="time" size="5" name="tu_until"></td>
+					<td><input type="time" size="5" name="we_until"></td>
+					<td><input type="time" size="5" name="th_until"></td>
+					<td><input type="time" size="5" name="fr_until"></td>
+					<td><input type="time" size="5" name="sa_until"></td>
+				</tr>
+			</table>
+		</div>
+	</fieldset>
+	<fieldset>
+		<legend>Get to Know You</legend>
+			<div class="field">
+				<label>What is your favorite item on our Menu?</label>
+				<input type="text" name="item">
+			</div>
+			<div class="field">
+				<label>What is your blood pressure?</label>
+				<input type="text" name="bp">
+			</div>
+			<div class ="field">
+				<label>Will you sign a non-disclosure agreement (NDA) regarding the work environment at our restaurants?</label>
+				<input type="radio" name="yesno" value="Yes">Yes
+				<input type="radio" name="yesno" value="Hell No">Hell No
+			</div>
+			<div class="field">
+				<label>Are you prepared to endure the following in our workplace (select all that apply)</label>
+				<ul>
+					<li><input type="checkbox" name="longhours" value="longhours">Long hours with little no break as our supervisors will bug you constantly to end lunch early</li>
+					<li><input type="checkbox" name="position_ft" value="fulltime">Constant verbal harrassment from entitled customers and frustrated coworkers</li>
+					<li><input type="checkbox" name="position_sl" value="seasonal">To be aware that you will always smell like grease</li>
+					<li><input type="checkbox" name="position_tp" value="temporary">A new found hatred for fast food and Mcdonalds</li>
+				</ul>
+			</div>
+	</fieldset>
+	<fieldset>
+		<legend>Personal Statement</legend>
+		<div class="field">
+			<label>Why do you deserve minimum wage?</label><br>
+			<textarea name="deserve" rows="6" cols="60"></textarea>
+		</div>
+		<div class="field">
+			<label>Describe how you would customize one of our menu items:</label><br>
+			<textarea name="project" rows="6" cols="60"></textarea>
+		</div>
+	</fieldset>
+
+	<input type="submit" value="Submit form">
+
+</form>
+</body>
+</html>
